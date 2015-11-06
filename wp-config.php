@@ -17,19 +17,21 @@
  *
  * @package WordPress
  */
-
+ 
 // ** MySQL settings - You can get this info from your web host ** //
+// Require RightScale DB Information
+require_once('./config/db.php');
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', $database_DB);
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', $username_DB);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', $password_DB);
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', $hostname_DB);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
