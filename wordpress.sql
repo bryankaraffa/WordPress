@@ -67,8 +67,8 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
 
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', '', 'yes'),
-(2, 'home', '', 'yes'),
+(1, 'siteurl', '/', 'yes'),
+(2, 'home', '/', 'yes'),
 (3, 'blogname', 'My WordPress Site', 'yes'),
 (4, 'blogdescription', 'Just another WordPress site', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
